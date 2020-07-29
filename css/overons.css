@@ -10,11 +10,19 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Nunito', sans-serif;
+    
+    scroll-snap-type: y mandatory;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(12, 42, 68, .65), rgba(12, 42, 68, .8)), url("../assets/img/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    z-index: -20;
 }
 
 /* Nav bar */
@@ -30,11 +38,13 @@ html, body {
 }
 
 nav#nav-bar {
+    position: fixed;
     width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
     background: none;
+    scroll-snap-align: start;
 }
 
 nav#nav-bar span {
@@ -60,83 +70,76 @@ nav#nav-bar span a:hover {
     border-bottom: 3px solid #1057c9;
 }
 
-/* Landing page */
-#landing-page {
-    height: calc(100% - 103px);
+/* Body */
+#body {
+    height: calc(200% - 103px);
+}
+
+#body .scroll {
+    width: 100%;
+    height: 50%;
+    scroll-snap-align: start;
+}
+
+#body #intro {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#landing-page h1#title {
-    font-family: 'Sriracha', cursive;
-    color: #FFF;
-    font-size: 130;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom: 50px;
-}
-
-#landing-page #text {
-    margin-top: 50px;
+#body #introduction {
+    width: 70%;
+    height: 70%;
+    background-color: #FFF;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
 }
 
-#landing-page #text p {
-    color: #FFF;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 45px;
+#body #introduction #img {
+    height: 90%;
+    width: 30%;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+#body #introduction p {
     display: inline-block;
+    width: 60%;
+    font-size: 24px;
+    font-weight: 300;
 }
 
-#landing-page #text button {
-    margin-left: 50px;
-    padding: 10px 50px;
-    border: 3px solid #FFF;
-    background: none;
-    color: #FFF;
-    font-size: 25px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    transition: .4s linear;
-    position: relative;
-    z-index: +2;
+#body #team {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
 }
 
-#landing-page #text button:hover {
-    color: #025bff;
-}
-
-#landing-page #text button::before {
-    content: "";
-    position: absolute;
-    left: -3px;
-    bottom: -3px;
-    width: 100%;
-    height: 100%;
+#body #team .namecard {
+    width: 20%;
+    height: 70%;
     background: #FFF;
-    transition: transform .5s;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(.5, 1.6, .4, .7);
-    transform: scaleX(0) scaleY(0);
-    transform-origin: bottom left;
-    border: 3px solid #FFF;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    z-index: -1 ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-#landing-page #text button:hover::before{
-    transform: scaleX(1) scaleY(1);
+#body #team .namecard img {
+    width: 80%;
+    margin: 10%;
+}
+
+#body #team .namecard .name {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -169,13 +172,7 @@ nav#nav-bar span a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    #landing-page #text {
-        flex-direction: column;
-    }
-
-    #landing-page #text button {
-        margin-top: 20px;
-    }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -211,30 +208,8 @@ nav#nav-bar span a:hover {
         background-color: rgba(12, 42, 68, .95);
     }
 
-    #landing-page {
+    #body {
         height: calc(100% - 50px);
-    }
-
-    #landing-page h1#title {
-        width: 90%;
-        padding: 0 5%;
-        font-size: 50px;
-        text-align: center;
-    }
-
-    #landing-page #text {
-        width: 95%;
-        padding: 0 2.5%;
-    }
-
-    #landing-page #text p {
-        font-size: 20px;
-    }
-
-    #landing-page #text button {
-        padding: 10px 20px;
-        margin-left: 0;
-        font-size: 18px;
     }
     
 }

@@ -144,6 +144,8 @@ nav#nav-bar span a:hover {
 
 /* Footer */
 #footer {
+    position: fixed;
+    bottom: 0;
     border-top: 2px solid #fff;
     height: 48px;
     display: flex;
@@ -172,21 +174,29 @@ nav#nav-bar span a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-    
+    #body #intro #introduction {
+        width: 90%;
+    }
+
+    #body #team .namecard {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    html {
-        overflow: hidden;
+    html, body {
+        
     }
+
     #open-close {
         display: inline-block;
+        position: fixed;
     }
 
     nav#nav-bar {
         width: 100%;
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         transform: translateX(-100%);
@@ -209,7 +219,42 @@ nav#nav-bar span a:hover {
     }
 
     #body {
-        height: calc(100% - 50px);
+        height: calc(400% - 40px);
     }
-    
+
+    #body .scroll {
+        scroll-snap-type: none;
+    }
+
+    #body #intro {
+        flex-direction: column;
+        height: auto;
+        height: 25%;
+    }
+
+    #body #intro #introduction {
+        height: auto;
+    }
+
+    #body #intro #introduction #img {
+        display: none;
+    }
+
+    #body #intro #introduction p {
+        width: 80%;
+        margin: 10% 0;
+        font-size: 16px;
+    }
+
+    #body #team {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 75%;
+    }
+
+    #body #team .namecard {
+        scroll-snap-align: center;
+        width: 70%;
+        height: calc(50% / 3);
+    }
 }

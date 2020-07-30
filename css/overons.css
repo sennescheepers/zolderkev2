@@ -184,8 +184,8 @@ nav#nav-bar span a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    html, body {
-        
+    #bg {
+        height: 120%;
     }
 
     #open-close {

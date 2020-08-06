@@ -10,7 +10,6 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Nunito', sans-serif;
-    
     scroll-snap-type: y mandatory;
 }
 
@@ -184,6 +183,10 @@ nav#nav-bar span a:hover {
 }
 
 @media screen and (max-width: 900px) {
+    html, body {
+        scroll-snap-type: none;
+    }
+
     #bg {
         height: 120%;
     }

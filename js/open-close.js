@@ -1,5 +1,15 @@
 const handleLoad = () => {
     document.getElementById("open-close").addEventListener('click', openClose);
+    window.addEventListener('scroll', handleScroll);
+}
+
+function handleScroll(e) {
+    console.log(window.scrollY);
+    if (window.scrollY > 0 && window.innerWidth > 900) {
+        document.getElementById('nav-bar').className = "background";
+    } else {
+        document.getElementById('nav-bar').className = "";
+    }
 }
 
 const openClose = () => {

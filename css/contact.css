@@ -1,0 +1,344 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    scroll-snap-type: y mandatory;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 120%;
+    background-image: linear-gradient(rgba(12, 42, 68, .65), rgba(12, 42, 68, .8)), url("../assets/img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -20;
+}
+
+/* Nav bar */
+#open-close {
+    display: none;
+    position: absolute;
+    z-index: +20;
+    top: 10px;
+    right: 10px;
+    font-size: 40;
+    color: #FFF;
+    cursor: pointer;
+}
+
+nav#nav-bar {
+    position: fixed;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: none;
+}
+
+nav#nav-bar span {
+    display: inline-block;
+}
+
+nav#nav-bar span a {
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFF;
+    transition: .2s ease-in-out;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+nav#nav-bar span a.current {
+    border-bottom: solid #1057c9 3px;
+}
+
+nav#nav-bar span a:hover {
+    border-bottom: 3px solid #1057c9;
+}
+
+/* Body */
+#body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#body #information {
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#body #information .title {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 10px 0 0 0;
+    letter-spacing: 2px;
+}
+
+#body #information .flex-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#body #information .flex-wrapper article {
+    padding: 10px;
+    display: flex;
+    width: calc(100% / 3 - 20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#body #information .flex-wrapper article:nth-child(2) {
+    width: calc(100% / 3 - 22px);
+    border-right: 1px solid #bcbcbc;
+    border-left: 1px solid #bcbcbc;
+}
+
+#body #information .flex-wrapper article i {
+    font-size: 25px;
+    padding: 0 25px 25px 25px;
+    color: #1057c9;
+}
+
+#body #information .flex-wrapper article a,
+#body #information .flex-wrapper article p {
+    text-decoration: none;
+    color: #000;
+    transition: .4s;
+    text-align: center;
+}
+
+#body #information .flex-wrapper article a:hover {
+    color: #1057c9;
+}
+
+#body #contact-openinghours {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#body #contact-openinghours #contact {
+    background-color: #fff;
+    width: calc(50% - 30px);
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#body #contact-openinghours #contact h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+#body #contact-openinghours #contact input,
+#body #contact-openinghours #contact textarea {
+    width: 100%;
+    padding: 10px;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+#body #contact-openinghours #contact input.button {
+    background: #495aff;
+    display: block;
+    transition: ease-in-out .4s;
+    color: #fff;
+}
+
+#body #contact-openinghours #contact input.button:hover {
+    background: #2d45c7;
+}
+
+#body #contact-openinghours #contact #linksboven {
+    width: calc(50% - 20px);
+    display: inline-block;
+    margin-right: 20px;
+    float: left;
+}
+
+#body #contact-openinghours #contact #rechtsboven {
+    width: calc(50% - 20px);
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+}
+
+#body #contact-openinghours #opening-hours {
+    background-color: #fff;
+    width: calc(50% - 30px);
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#body #contact-openinghours #opening-hours h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+#body #contact-openinghours #opening-hours td {
+    padding: 10px 5px;
+}
+
+#body #contact-openinghours #opening-hours a {
+    text-decoration: none;
+    color: #2d45c7;
+    transition: .4s;
+}
+
+#body #contact-openinghours #opening-hours a:hover {
+    color: #495aff;
+}
+
+/* Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid #fff;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 5%;
+    background: none;
+}
+
+#footer span {
+    color: #FFF;
+    font-size: 20px;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #FFF;
+    transition: .2s ease-in-out;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #1057c9;
+}
+
+@media screen and (max-width: 900px) {
+    html, body {
+        scroll-snap-type: none;
+    }
+
+    #bg {
+        height: 120%;
+    }
+
+    #open-close {
+        display: inline-block;
+        position: fixed;
+        background-color: rgba(46, 82, 114, 0.7);
+        padding: 0 5px;
+        border-radius: 5px;
+    }
+
+    nav#nav-bar {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(-100%);
+        padding: 0;
+        margin: 0;
+        z-index: +10;
+        background-color: rgba(12, 42, 68, .0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    nav#nav-bar.active {
+        display: flex;
+        top: 0;
+        right: 0;
+        transform: translateX(0);
+        background-color: rgba(12, 42, 68, .95);
+    }
+
+    #body {
+        height: auto;
+        width: 100%;
+    }
+
+    #body #information {
+        margin: 80px 0;
+    }
+
+    #body #information .flex-wrapper {
+        flex-direction: column;
+    }
+
+    #body #information .flex-wrapper article {
+        width: 90%;
+    }
+
+    #body #information .flex-wrapper article:nth-child(2) {
+        width: 90%;
+        border: none;
+        border-top: 1px solid #bcbcbc;
+        border-bottom: 1px solid #bcbcbc;
+    }
+
+    #body #contact-openinghours {
+        flex-direction: column;
+    }
+
+    #body #contact-openinghours #contact,
+    #body #contact-openinghours #opening-hours {
+        width: calc(100% - 20px);
+        margin: 0;
+        margin-bottom: 80px;
+    }
+    
+}

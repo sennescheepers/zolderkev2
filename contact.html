@@ -1,31 +1,96 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Kunstkring 't Zolderke Zutendaal">
-        <meta name="keywords" content="kunstkring, Zutendaal, tekenschool, Zolderke, tekenen, keramiek, tekenles, keramiekles, boetseren, schilderen">
-        <meta name="author" content="Senne Scheepers">
-        <title>Kunstkring 't Zolderke | contact</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/contact.css">
-        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <section id="background"></section>
-        <i class="fa fa-bars" id="open-close"></i>
-        <nav id="nav-bar">
-            <span><a href="index.html">HOME</a></span>
-            <span><a href="overons.html">OVER ONS</a></span>
-            <span><a class="current" href="#nav-bar">CONTACT</a></span>
-            <span><a href="nieuws.html">NIEUWS</a></span>
-            <span><a href="boetseren.html">BOETSEREN</a></span>
-            <span><a href="tekenen.html">TEKENEN</a></span>
-        </nav>
-        <section id="footer">
-            <span>&copy; 2020 <a target="_blank" href="https://github.com/sennescheepers">Senne Scheepers</a></span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kunstkring 't Zolderke Zutendaal">
+    <meta name="keywords"
+        content="kunstkring, Zutendaal, tekenschool, Zolderke, tekenen, keramiek, tekenles, keramiekles, boetseren, schilderen">
+    <meta name="author" content="Senne Scheepers">
+    <meta name="viewport" content="width=device-width">
+    <title>Kunstkring 't Zolderke | contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="background"></section>
+    <i class="fa fa-bars" id="open-close"></i>
+    <nav id="nav-bar">
+        <span><a href="index.html">HOME</a></span>
+        <span><a href="overons.html">OVER ONS</a></span>
+        <span><a class="current" href="#nav-bar">CONTACT</a></span>
+        <span><a href="nieuws.html">NIEUWS</a></span>
+        <span><a href="boetseren.html">BOETSEREN</a></span>
+        <span><a href="tekenen.html">TEKENEN</a></span>
+    </nav>
+    <section id="body">
+        <section id="information">
+            <span class="title">Contactinformatie</span>
+            <div class="flex-wrapper">
+                <article>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:willy.noben@gmail.com">willy.noben@gmail.com</a></p>
+                </article>
+                <article>
+                    <i class="fa fa-map-marker"></i>
+                    <p><a href="https://www.google.com/maps/place/Schoolstraat+6,+3690+Zutendaal/@50.9294769,5.5704676,19z/data=!3m1!4b1!4m5!3m4!1s0x47c0dc4f28dd40af:0x2dcc923da074d262!8m2!3d50.9294769!4d5.5710148"
+                            target="_blank">Schoolstraat 6, 3690 Zutendaal, België</a></p>
+                </article>
+                <article>
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:089000000">089 00 00 00</a></p>
+                </article>
+            </div>
         </section>
-        <script src="js/open-close.js"> </script>
-    </body>
+        <section id="contact-openinghours">
+            <section id="contact">
+                <h1>Contacteer ons</h1>
+                <div id="linksboven">
+                    <label for="voornaam">Voornaam</label><br>
+                    <input type="text" id="voornaam">
+                </div>
+                <div id="rechtsboven">
+                    <label for="achternaam">Achternaam</label><br>
+                    <input type="text" id="achternaam"><br>
+                </div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email"><br>
+                <label for="bericht">Bericht</label><br>
+                <textarea id="bericht" cols="30" rows="10"></textarea>
+                <input type="submit" class="button" id="verstuurButton" value="Verzenden">
+            </section>
+            <section id="opening-hours">
+                <h1>Openingsuren</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Dinsdag:</td>
+                            <td>19:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Donderdag:</td>
+                            <td>19:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Zondag:</td>
+                            <td>10:00 - 12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Dit geldt niet iedere week, zie <a href="assets/kalender.pdf" target="_blank">kalender</a> voor
+                    meer info.</p>
+            </section>
+        </section>
+    </section>
+    <section id="footer">
+        <span>&copy; 2020 <a target="_blank" href="https://github.com/sennescheepers">Senne Scheepers</a></span>
+    </section>
+    <script src="js/open-close.js"> </script>
+</body>
+
 </html>

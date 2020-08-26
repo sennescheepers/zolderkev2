@@ -192,7 +192,6 @@ nav#nav-bar span a:hover {
 
 @media screen and (max-width: 900px) {
     html {
-        overflow: hidden;
     }
     #open-close {
         display: inline-block;
@@ -224,7 +223,7 @@ nav#nav-bar span a:hover {
     }
 
     #landing-page {
-        height: calc(100% - 143px);
+        min-height: calc(100% - 143px);
     }
 
     #landing-page h1#title {

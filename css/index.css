@@ -191,8 +191,6 @@ nav#nav-bar span a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    html {
-    }
     #open-close {
         display: inline-block;
     }

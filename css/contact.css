@@ -194,16 +194,16 @@ nav#nav-bar span a:hover {
 }
 
 #body #contact-openinghours #contact #linksboven {
-    width: calc(50% - 20px);
+    width: calc(50% - 5px);
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
     float: left;
 }
 
 #body #contact-openinghours #contact #rechtsboven {
-    width: calc(50% - 20px);
+    width: calc(50% - 5px);
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 5px;
     float: right;
 }
 

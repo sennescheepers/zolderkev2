@@ -43,6 +43,11 @@ nav#nav-bar {
     justify-content: space-between;
     padding: 0 10%;
     background: none;
+    transition: .4s;
+}
+
+nav#nav-bar.background {
+    background-color: rgba(12, 42, 68, .95);
 }
 
 nav#nav-bar span {
@@ -70,15 +75,18 @@ nav#nav-bar span a:hover {
 
 /* Body */
 #body {
-    height: 100%;
+    min-height: calc(100% - 143px);
+    padding-top: 73px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 #body #information {
     width: 90%;
+    margin-bottom: 20px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -235,8 +243,6 @@ nav#nav-bar span a:hover {
 
 /* Footer */
 #footer {
-    position: fixed;
-    bottom: 0;
     border-top: 2px solid #fff;
     height: 48px;
     display: flex;

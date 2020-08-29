@@ -1,9 +1,20 @@
 const handleLoad = () => {
     document.getElementById("open-close").addEventListener('click', openClose);
     window.addEventListener('scroll', handleScroll);
-    document.getElementById("lees-meer").addEventListener('click', () => {
+    document.getElementById("lees-meer")?.addEventListener('click', () => {
         window.location.href = "overons.html"
     });
+    document.getElementById('verstuurButton')?.addEventListener('click', sendEmail);
+}
+
+function sendEmail() {
+    let name = document.getElementById('voornaam').value;
+    let surname = document.getElementById('achternaam').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('bericht').value;
+    let body = `naam: ${name} ${surname}, email: ${email}, bericht: ${message}`;
+    let href = `mailto:willy.noben@gmail.com?Subject=zolderke&body=${body}`;
+    window.location.href = href;
 }
 
 function handleScroll(e) {

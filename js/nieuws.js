@@ -62,42 +62,6 @@ const news = [
         article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
         date: "25/08/2020",
         image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
-    },
-    {
-        title: "Zolderke momenteel gesloten wegens COVID-19",
-        article: "Wegens de huidige omstandigheden zijn we genoodzaakt om de lessen voor onbepaalde tijd te annuleren.",
-        date: "25/08/2020",
-        image: "assets/img/corona.jpg"
     }
 ];
 

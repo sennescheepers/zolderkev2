@@ -18,6 +18,7 @@ function sendEmail() {
 }
 
 function handleScroll(e) {
+    if (document.getElementById('nav-bar').className == "active") return;
     if (window.scrollY > 0 && window.innerWidth > 900) {
         document.getElementById('nav-bar').className = "background";
     } else {
